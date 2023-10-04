@@ -23,5 +23,9 @@ Within this repository, [active_learning_dd/utils/generate_bt_clustering.py](act
 
 One thing to note is that the hit column can be empty, but the column should be present. In addition, the columns do not need to be in this order, but these columns should be present within the dataset. [Fact check this]
 
-6- There should exist some structure for where your training pool csv files and the unlabeled pool csv files are located. We recommend matching the sample data set file structure within this respository. 
+6- There should exist some structure for where your training pool csv files and the unlabeled pool csv files are located. We would recommend that you match the sample data set file structure within this repository. 
+
+## Running the Active Learning Model
+
+1. Before running the active learning model, you will need to modify a config file to match the format the model takes in. We recommend modifying [active-learning-drug-discovery/param_configs/general_pipeline_config.json](active-learning-drug-discovery/param_configs/general_pipeline_config.json) that has most of what is needed for an initial already properly formatted. The main things to update within the training_data_params and unlabeled_data_params sections of the config file are the data paths to your data paths and the corresponding column names to match the column names within your data. 
 
