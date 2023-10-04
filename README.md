@@ -1,6 +1,6 @@
 # README Steps
 
-## Prerequirements for Running Active Learning Model
+## Formatting Data for Running the Active Learning Model
 
 1- Prepare a csv file of the entire pool of compounds with a SMILES string for each compound. The entire pool of compounds should include both labeled and unlabeled compounds. 
 
