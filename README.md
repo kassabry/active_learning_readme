@@ -9,7 +9,7 @@
 3- Generate features (e.g. MorganFP 1024 using rdkit) for each compound. Add this feature as a string for each compound as a column in your csv dataset.
 
 4- Cluster your compounds using a preferred clustering algorithm. Butina-Taylor was used to cluster and generate dissimalirty matrix within this codebase. 
-Within this repository, active_learning_dd/utils/generate_bt_clustering.py is a file that will generate your cluster ids for your compounds as well as computing the dissimilarity matrix. It is helpful to keep this output file to reduce the runtime of some methods by saving the resources needed to recalculate this matrix. 
+Within this repository, [active_learning_dd/utils/generate_bt_clustering.py](active_learning_dd/utils/generate_bt_clustering.py) is a file that will generate your cluster ids for your compounds as well as computing the dissimilarity matrix. It is helpful to keep this output file to reduce the runtime of some methods by saving the resources needed to recalculate this matrix. 
 
 -- If using a separate clustering method, make sure there is a cluster ID column within your csv dataset and your dissimilarity matrix. Otherwise, the dissimilarity matrix will be generated using Butina-Taylor, and the cluster assignments might not be the same.
 
