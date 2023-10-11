@@ -6,7 +6,7 @@
 
 2- Within your dataset, there should be a unique id for each compound. This uniqueness ID could be a unique smiles string or integer indexing. 
 
-3- Generate features (e.g. MorganFP 1024 using rdkit) for each compound. Add this feature as a string for each compound as a column in your csv dataset.
+3- Generate features (e.g. MorganFP 1024 using rdkit) for each compound. Add this feature as a string for each compound as a column in your csv dataset. (Utlize the code in [here](https://github.com/gitter-lab/pria-ams-enamine/blob/master/preprocessing/preprocess_datasets_chtc.py#L85-L91)
 
 4- Cluster your compounds using a preferred clustering algorithm. Butina-Taylor was used to cluster and generate dissimalirty matrix within this codebase. 
 Within this repository, [active_learning_dd/utils/generate_bt_clustering.py](active_learning_dd/utils/generate_bt_clustering.py) is a file that will generate your cluster ids for your compounds as well as computing the dissimilarity matrix. It is helpful to keep this output file to reduce the runtime of some methods by saving the resources needed to recalculate this matrix. 
