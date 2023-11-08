@@ -39,3 +39,14 @@ The active learning code will default to computing the Tanimoto dissimilarity ma
 I think there's something wrong with the conda environment, but I need to investigate it more to find out for sure. 
 
 All the indices for the data must start at 0 and count up. The indices cannot exceed the len of data. So no cutting up data in multiple files. 
+
+## Errors
+
+### BT Clustering
+![image](https://github.com/kassabry/active_learning_readme/assets/33270781/240142e0-3b71-40a8-9e0b-1a2af21079b0)
+
+1). With the dissimilarity matrix path defined, you will get the OS error, I think because the file hasn't been made yet. (Should remove from the example on how to run at top of the code)
+
+2). Without the dissimialrity matrix path defined, there is an assignment error, where the variable is referenced before the assignment. 
+
+The weird aspect of this, is the only difference between the two is the file path for the uncreated matrix .dat file, but for some reason the code will run up until the writing of the .dat file when the filepath is defined as in (1). But when there is no file path defined as in (2), the code won't even run. Which means I think that the get_features method is broken, whereas, the get_n_instances method is fine, but writing the file is messed up somewhere. 
