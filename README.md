@@ -50,3 +50,11 @@ All the indices for the data must start at 0 and count up. The indices cannot ex
 2). Without the dissimialrity matrix path defined, there is an assignment error, where the variable is referenced before the assignment. 
 
 The weird aspect of this, is the only difference between the two is the file path for the uncreated matrix .dat file, but for some reason the code will run up until the writing of the .dat file when the filepath is defined as in (1). But when there is no file path defined as in (2), the code won't even run. Which means I think that the get_features method is broken, whereas, the get_n_instances method is fine, but writing the file is messed up somewhere. 
+
+
+### Generate Dissimilarity Matrix
+![image](https://github.com/kassabry/active_learning_readme/assets/33270781/1f9637be-66d6-4dae-9449-9eadb5e6af75)
+
+![image](https://github.com/kassabry/active_learning_readme/assets/33270781/50f092a5-687d-44a1-a39a-6fcb47f6fc4a)
+
+
