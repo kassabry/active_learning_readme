@@ -37,3 +37,5 @@ It seems like the config variable names don't matter? If the variables don't mat
 The active learning code will default to computing the Tanimoto dissimilarity matrix if you don't already have a dissimilarity matrix, but both the BT clustering and Tanimoto both error out. 
 
 I think there's something wrong with the conda environment, but I need to investigate it more to find out for sure. 
+
+All the indices for the data must start at 0 and count up. The indices cannot exceed the len of data. So no cutting up data in multiple files. 
