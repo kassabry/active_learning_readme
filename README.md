@@ -29,3 +29,7 @@ One thing to note is that the hit column can be empty, but the column should be 
 
 1. Before running the active learning model, you will need to modify a config file to match the format the model takes in. We recommend modifying [active-learning-drug-discovery/param_configs/general_pipeline_config.json](active-learning-drug-discovery/param_configs/general_pipeline_config.json) that has most of what is needed for an initial already properly formatted. The main things to update within the training_data_params and unlabeled_data_params sections of the config file are the data paths to your data paths and the corresponding column names to match the column names within your data. 
 
+
+## Notes
+
+It seems like the config variable names don't matter? If the variables don't match the specific names within the code, it will error out. It will run without even checking the config??
