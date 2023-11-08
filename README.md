@@ -33,3 +33,5 @@ One thing to note is that the hit column can be empty, but the column should be 
 ## Notes
 
 It seems like the config variable names don't matter? If the variables don't match the specific names within the code, it will error out. It will run without even checking the config??
+
+The active learning code will default to computing the Tanimoto dissimilarity matrix if you don't already have a dissimilarity matrix, but both the BT clustering and Tanimoto both error out. 
