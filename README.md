@@ -43,7 +43,7 @@ All the indices for the data must start at 0 and count up. The indices cannot ex
 ## Errors
 
 ### BT Clustering
-![image](Screenshot 2023-11-09 153030.png)
+![image](error_1.png)
 
 1). With the dissimilarity matrix path defined, you will get the OS error, I think because the file hasn't been made yet. (Should remove from the example on how to run at top of the code)
 
@@ -53,8 +53,8 @@ The weird aspect of this, is the only difference between the two is the file pat
 
 
 ### Generate Dissimilarity Matrix
-![image](https://github.com/kassabry/active_learning_readme/assets/33270781/1f9637be-66d6-4dae-9449-9eadb5e6af75)
+![image](error_2.png)
 
-![image](https://github.com/kassabry/active_learning_readme/assets/33270781/50f092a5-687d-44a1-a39a-6fcb47f6fc4a)
+![image](error_3.png)
 
 
